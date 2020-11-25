@@ -1,4 +1,5 @@
-https://dima-kulikov.github.io/Black-friday-DM/
+https://dima-kulikov.github.io/Black-friday-DM/build/index.html
+
 
 
 
