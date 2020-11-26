@@ -116,7 +116,6 @@ main {
         transform: translate(0, 50px) rotate(0deg);
       }
     }
-
     .cordless__img-2 {
       position: absolute;
       top: -120px;
@@ -172,5 +171,57 @@ main {
       text-align: center;
       color: #ffffff;
     }
+  }
+}
+// -------------СВАРОЧНЫЕ АППАРАТЫ
+
+.welders__img {
+  position: absolute;
+  top: 0px;
+  left: -50%;
+  width: 80%;
+  // transition: 10s;
+  animation: translating3 10s linear infinite;
+}
+@keyframes translating3 {
+  0% {
+    transform: translate(0, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(0px, 20) rotate(-5deg);
+  }
+  50% {
+    transform: translate(150px, 60px) rotate(-10deg);
+  }
+  75% {
+    transform: translate(50px, 20px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0px) rotate(0deg);
+  }
+}
+
+.welders__img-2 {
+  position: absolute;
+  top: 100px;
+  right: -50%;
+  width: 100%;
+  animation: translating3 10s linear infinite;
+}
+@keyframes translating3 {
+  0% {
+    transform: translate(0, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(0px, 20) rotate(-5deg);
+  }
+  50% {
+    transform: translate(150px, 60px) rotate(-10deg);
+  }
+  75% {
+    transform: translate(50px, 20px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0px) rotate(0deg);
   }
 }
