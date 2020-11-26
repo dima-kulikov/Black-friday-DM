@@ -80,7 +80,7 @@ main {
 
 .cordless {
   position: relative;
-  outline: 2px solid royalblue;
+  outline: 1px solid  #ff2f00;
   height: 600px;
   margin: 700px 0px;
 
@@ -149,13 +149,16 @@ main {
       // height: 63px;
       // left: 50%;
       // top: 252px;
-      margin: 0px auto;
+
       font-style: normal;
       font-weight: 500;
       font-size: 50px;
       line-height: 63px;
       color: #ffffff;
     }
+.cordless__prise{
+    margin: 0px auto;
+}
 
     button {
       width: 174px;
@@ -178,12 +181,39 @@ main {
 .welders__img {
   position: absolute;
   top: 0px;
-  left: -50%;
+  left: -30%;
   width: 80%;
   // transition: 10s;
   animation: translating3 10s linear infinite;
 }
+
+
 @keyframes translating3 {
+  0% {
+    transform: translate(0, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate(0px, 20) rotate(5deg);
+  }
+  50% {
+    transform: translate(25px, 40px) rotate(20deg);
+  }
+  75% {
+    transform: translate(50px, 20px) rotate(10deg);
+  }
+  100% {
+    transform: translate(0, 0px) rotate(0deg);
+  }
+}
+
+.welders__img-2 {
+  position: absolute;
+  top: -600px;
+  right: -30%;
+  width: 110%;
+  animation: translating4 10s linear infinite;
+}
+@keyframes translating4 {
   0% {
     transform: translate(0, 0px) rotate(0deg);
   }
@@ -201,27 +231,38 @@ main {
   }
 }
 
-.welders__img-2 {
-  position: absolute;
-  top: 100px;
-  right: -50%;
-  width: 100%;
-  animation: translating3 10s linear infinite;
+.welders__price{
+  margin: 0px 0px 0px 5%;
 }
-@keyframes translating3 {
+
+
+// -------------РЕЙСМУС
+
+.wood-machine__img {
+  position: absolute;
+  top: -400px;
+  left: -30%;
+  width: 100%;
+  // transition: 10s;
+  animation: translating4 10s linear infinite;
+}
+@keyframes translating4 {
   0% {
     transform: translate(0, 0px) rotate(0deg);
   }
   25% {
-    transform: translate(0px, 20) rotate(-5deg);
+    transform: translate(100px, 20) rotate(5deg);
   }
   50% {
-    transform: translate(150px, 60px) rotate(-10deg);
+    transform: translate(150px, 40px) rotate(-5deg);
   }
   75% {
-    transform: translate(50px, 20px) rotate(-5deg);
+    transform: translate(100px, 20px) rotate(5deg);
   }
   100% {
     transform: translate(0, 0px) rotate(0deg);
   }
+}
+.wood-machine__price{
+  margin: 0px 0px 0px 70%;
 }
