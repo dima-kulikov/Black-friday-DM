@@ -240,9 +240,14 @@ main {
   top: 0px;
   left: -30%;
   width: 80%;
-  // transition: 10s;
+  transition: 10s;
   animation: translating3 20s linear infinite;
   z-index: -1;
+  @media only screen and (max-width: 768px) {
+    top: -510px;
+    left: 35%;
+    z-index: 1;
+  }
 }
 
 @keyframes translating3 {
@@ -270,6 +275,12 @@ main {
   width: 110%;
   animation: translating4 20s linear infinite;
   z-index: -1;
+  transition: 10s;
+  @media only screen and (max-width: 768px) {
+ 
+    top: -760px;
+    left: -38%;
+  }
 }
 @keyframes translating4 {
   0% {
@@ -291,7 +302,12 @@ main {
 
 .welders__price {
   margin: 0px 0px 0px 5%;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0px auto;
+  }
 }
+
 
 // -------------РЕЙСМУС
 
@@ -300,9 +316,13 @@ main {
   top: -400px;
   left: -30%;
   width: 100%;
-  // transition: 10s;
+  transition: 6s;
   animation: translating4 20s linear infinite;
   z-index: -1;
+  @media only screen and (max-width: 768px){
+top: -680px;
+
+  }
 }
 @keyframes translating4 {
   0% {
@@ -317,12 +337,17 @@ main {
   75% {
     transform: translate(100px, 20px) rotate(5deg);
   }
+
   100% {
     transform: translate(0, 0px) rotate(0deg);
   }
 }
 .wood-machine__price {
   margin: 0px 0px 0px 70%;
+
+  @media only screen and (max-width: 768px) {
+  margin: 0px auto;
+  }
 }
 
 // -------------ПЕРФОРАТОР
