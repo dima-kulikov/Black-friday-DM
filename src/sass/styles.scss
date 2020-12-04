@@ -22,16 +22,26 @@ main {
   z-index: -1;
 }
 .img-3 {
-  top: -200px;
-  left: 400px;
-  z-index: -1;
+  top: -60%;
+  left: 40%;
+  z-index: -10;
 }
 .img-4 {
   top: 200px;
   right: -20%;
-  transition: 60s;
+  // transition: 60s;
   animation: loader-1 20.1s infinite linear;
   z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  .img-1,
+  .img-2,
+  .img-4 {
+    width: 35%;
+  }
+  .img-3 {
+    width: 25%;
+  }
 }
 @keyframes loader-1 {
   0% {
@@ -85,28 +95,36 @@ main {
 
 .cordless {
   position: relative;
-  outline: 1px solid #ff2f00;
-  height: 600px;
+  // outline: 1px solid #ff2f00;
+  // height: 600px;
 
   .cordless__block {
     position: relative;
     width: 100%;
     max-width: 1420px;
     margin: 0px auto;
-    // outline: 2px solid red;
+    @media only screen and (max-width: 768px) {
+      margin: 100px auto;
+    }
+    @media only screen and (max-width: 375px) {
+      margin: 0px auto;
+    }
 
     .cordless__img {
       position: absolute;
       top: -300px;
       left: -50%;
       width: 80%;
-      transition: 6s;
+      // transition: 6s;
       animation: translating 20s linear infinite;
       z-index: -1;
       @media only screen and (max-width: 768px) {
-        top: -700px;
+        top: -390%;
         left: -20%;
         // width: 70%;
+      }
+      @media only screen and (max-width: 375px) {
+        top: -170%;
       }
     }
     @keyframes translating {
@@ -131,13 +149,15 @@ main {
       top: -220px;
       right: -20%;
       width: 80%;
-      transition: 6s;
+      // transition: 6s;
       animation: translating2 10s linear infinite;
       z-index: -1;
       @media only screen and (max-width: 768px) {
         top: -560px;
         right: -20%;
-        // width: 70%;
+      }
+      @media only screen and (max-width: 375px) {
+        top: -140%;
       }
     }
     @keyframes translating2 {
@@ -159,7 +179,7 @@ main {
     }
 
     .price {
-      width: 320px;
+      width: 601px;
       font-style: normal;
       font-weight: 500;
       font-size: 50px;
@@ -169,6 +189,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      outline: 2px solid red;
       @media only screen and (max-width: 768px) {
         font-size: 30px;
       }
@@ -179,6 +200,9 @@ main {
 
       @media only screen and (max-width: 768px) {
         margin-top: 327px;
+      }
+      @media only screen and (max-width: 375px) {
+        margin-top: 140px;
       }
     }
 
@@ -240,13 +264,16 @@ main {
   top: 0px;
   left: -30%;
   width: 80%;
-  transition: 10s;
+  // transition: 10s;
   animation: translating3 20s linear infinite;
   z-index: -1;
   @media only screen and (max-width: 768px) {
-    top: -510px;
+    top: -610px;
     left: 35%;
     z-index: 1;
+  }
+  @media only screen and (max-width: 375px) {
+    top: -250px;
   }
 }
 
@@ -275,11 +302,13 @@ main {
   width: 110%;
   animation: translating4 20s linear infinite;
   z-index: -1;
-  transition: 10s;
+  // transition: 10s;
   @media only screen and (max-width: 768px) {
- 
-    top: -760px;
+    top: -840px;
     left: -38%;
+  }
+  @media only screen and (max-width: 375px) {
+    top: -350px;
   }
 }
 @keyframes translating4 {
@@ -308,7 +337,6 @@ main {
   }
 }
 
-
 // -------------РЕЙСМУС
 
 .wood-machine__img {
@@ -316,12 +344,15 @@ main {
   top: -400px;
   left: -30%;
   width: 100%;
-  transition: 6s;
+  // transition: 6s;
   animation: translating4 20s linear infinite;
   z-index: -1;
-  @media only screen and (max-width: 768px){
-top: -680px;
-
+  @media only screen and (max-width: 768px) {
+    top: -680px;
+  }
+  @media only screen and (max-width: 375px) {
+    top: -440px;
+    width: 130%;
   }
 }
 @keyframes translating4 {
@@ -329,13 +360,13 @@ top: -680px;
     transform: translate(0, 0px) rotate(0deg);
   }
   25% {
-    transform: translate(100px, 20) rotate(5deg);
+    transform: translate(80px, 20) rotate(5deg);
   }
   50% {
-    transform: translate(150px, 40px) rotate(-5deg);
+    transform: translate(130px, 40px) rotate(-5deg);
   }
   75% {
-    transform: translate(100px, 20px) rotate(5deg);
+    transform: translate(80px, 20px) rotate(5deg);
   }
 
   100% {
@@ -346,7 +377,7 @@ top: -680px;
   margin: 0px 0px 0px 70%;
 
   @media only screen and (max-width: 768px) {
-  margin: 0px auto;
+    margin: 0px auto;
   }
 }
 
@@ -360,6 +391,15 @@ top: -680px;
   // transition: 10s;
   animation: translating5 20s linear infinite;
   z-index: -1;
+  @media only screen and (max-width: 768px) {
+    top: -410px;
+    left: 5%;
+  }
+  @media only screen and (max-width: 375px) {
+    top: -430px;
+    width: 200%;
+    left: -45%;
+  }
 }
 @keyframes translating5 {
   0% {
@@ -380,6 +420,10 @@ top: -680px;
 }
 .perforator__price {
   margin: 0px 0px 0px 5%;
+  @media only screen and (max-width: 768px) {
+    margin: 0px auto;
+    margin-top: 400px;
+  }
 }
 
 // -------------ПЫЛЕСОС
@@ -392,6 +436,14 @@ top: -680px;
   // transition: 10s;
   animation: translating6 20s linear infinite;
   z-index: -1;
+  @media only screen and (max-width: 768px) {
+    left: -40%;
+  }
+  @media only screen and (max-width: 375px) {
+    top: -550px;
+    left: -60%;
+    width: 180%;
+  }
 }
 @keyframes translating6 {
   0% {
@@ -412,6 +464,9 @@ top: -680px;
 }
 .vacuum-cleaner__price {
   margin: 0px 0px 0px 70%;
+  @media only screen and (max-width: 768px) {
+    margin: 0px auto;
+  }
 }
 // -------------ВСЕ АКЦИИ
 
@@ -421,26 +476,47 @@ top: -680px;
 }
 
 .cordless__position {
-  margin: 800px 0px;
+  margin: 1000px 0px;
   @media only screen and (max-width: 768px) {
     margin: 800px 0px 600px 0px;
+  }
+  @media only screen and (max-width: 375px) {
+    margin: 400px 0px 400px 0px;
   }
 }
 .welders__position {
   margin: 200px 0px;
 }
 .wood-machine__position {
-  margin: 550px 0px 0px 0px;
+  margin: 900px 0px 0px 0px;
+  @media only screen and (max-width: 768px) {
+    margin: 500px 0px 0px 0px;
+  }
 }
 .perforator__position {
-  margin: 550px 0px 0px 0px;
+  margin: 950px 0px 0px 0px;
+  @media only screen and (max-width: 768px) {
+    margin: 200px 0px 100px 0px;
+  }
 }
 .vacuum-cleaner__position {
-  margin: 350px 0px;
+  margin: 550px 0px 350px 0px;
+  @media only screen and (max-width: 768px) {
+    margin: 300px 0px 100px 0px;
+  }
+  @media only screen and (max-width: 375px) {
+    margin: 400px 0px 100px 0px;
+  }
 }
 .shares__position {
   text-align: center;
+  margin: 400px 0px;
 }
 .shares__price p {
   margin: 0px auto;
+}
+
+.footer-block {
+  margin: 0px auto;
+  // width: 620px;
 }
