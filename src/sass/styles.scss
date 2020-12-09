@@ -1,11 +1,92 @@
 body {
   background-color: #181a1e;
 }
+
+// отсчет времени
+.time{
+  /*   outline: 2px solid red; */
+    max-width: 700px;
+    margin: 0px auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+     color: white; 
+  /*   font-size: 22px; */
+    font-weight: bold;
+  }
+  .time__text{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  }
+  .time__block{
+    width: 150px;
+    height: 100px;
+    border: 2px solid #2D2D2D;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+// отсчет времени --- конец
+
+// форма заполнения
+.form{
+  max-width: 1000px;
+  margin: 300px auto;
+  outline: 2px solid red;
+  display: flex;
+  padding: 10px;
+text-align: left;
+
+.form__text{
+  width: 70%;
+}
+  .form__text__first{
+    font-size: 28px;
+line-height: 35px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFFFFF;
+
+  }
+  .form__text__second{
+    font-size: 18px;
+line-height: 23px;
+color: #FFFFFF;
+  }
+}
+.form__write{
+  flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+
+    p{
+      margin:5px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  .tel{
+    width: 330px;
+    height: 50px;
+    background: #FFFFFF;
+opacity: 0.1;
+border-radius: 3px;
+color: #FFFFFF;
+  }  
+
+}
+
+// форма заполнения -- конец
 main {
   overflow: hidden;
 }
 .first-block {
-  margin: 112px 0px 600px 0px;
+  margin: 112px 0px 230px 0px;
   position: relative;
 }
 .position {
@@ -189,7 +270,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      outline: 2px solid red;
+      // outline: 2px solid red;
       @media only screen and (max-width: 768px) {
         font-size: 30px;
       }
@@ -476,7 +557,7 @@ main {
 }
 
 .cordless__position {
-  margin: 1000px 0px;
+  margin: 450px 0px 1000px;
   @media only screen and (max-width: 768px) {
     margin: 800px 0px 600px 0px;
   }
