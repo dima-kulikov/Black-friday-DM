@@ -41,8 +41,9 @@ body {
   display: flex;
   padding: 10px;
   text-align: left;
-  @media only screen and (max-width: 1024px) {
-    margin: 300px auto;
+  @media only screen and (max-width: 768px) {
+    margin: 0px auto;
+    flex-direction: column;
   }
 
   .form__text {
@@ -322,7 +323,7 @@ main {
     }
 
     .price {
-      width: 601px;
+      // width: 601px;
       font-style: normal;
       font-weight: 500;
       font-size: 50px;
