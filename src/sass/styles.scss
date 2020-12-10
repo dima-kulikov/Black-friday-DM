@@ -3,82 +3,144 @@ body {
 }
 
 // отсчет времени
-.time{
-  /*   outline: 2px solid red; */
-    max-width: 700px;
-    margin: 0px auto; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-     color: white; 
+.time {
+  max-width: 700px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
   /*   font-size: 22px; */
-    font-weight: bold;
-  }
-  .time__text{
+  font-weight: bold;
+}
+.time__text {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: white;
-  }
-  .time__block{
-    width: 150px;
-    height: 100px;
-    border: 2px solid #2D2D2D;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+}
+.time__block {
+  width: 150px;
+  height: 100px;
+  border: 2px solid #2d2d2d;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 // отсчет времени --- конец
 
 // форма заполнения
-.form{
+.form {
   max-width: 1000px;
-  margin: 300px auto;
-  outline: 2px solid red;
+  margin: 300px 0px 0px 16%;
+  // outline: 2px solid red;
   display: flex;
   padding: 10px;
-text-align: left;
+  text-align: left;
+  @media only screen and (max-width: 1024px) {
+    margin: 300px auto;
+  }
 
-.form__text{
-  width: 70%;
-}
-  .form__text__first{
+  .form__text {
+    width: 70%;
+  }
+  .form__text__first {
     font-size: 28px;
-line-height: 35px;
-letter-spacing: 0.05em;
-text-transform: uppercase;
-color: #FFFFFF;
-
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0px;
   }
-  .form__text__second{
+  .form__text__second {
     font-size: 18px;
-line-height: 23px;
-color: #FFFFFF;
+    line-height: 23px;
+    color: #ffffff;
+    margin-top: 30px;
   }
 }
-.form__write{
+.form__write {
   flex-direction: column;
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
-    p{
-      margin:5px;
-      text-align: center;
-      color: #FFFFFF;
-    }
-  .tel{
+  p {
+    margin: 5px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .tel {
     width: 330px;
     height: 50px;
-    background: #FFFFFF;
-opacity: 0.1;
-border-radius: 3px;
-color: #FFFFFF;
-  }  
+    background: #2f3034;
+    // opacity: 0.1;
+    border-radius: 3px;
+    color: #ffffff;
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  ::placeholder {
+    color: #ffffff;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
+  button {
+    margin: 35px auto 0px;
+    width: 330px;
+    // padding: 0px 40px;
+    height: 60px;
+    background: #ff2f00;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    animation: button-shadow 1.5s infinite alternate;
+    cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+      width: 315px;
+    }
+  }
+  @keyframes button-shadow {
+    // 0% {
+    //   box-shadow: 0px 0px 20px 0px rgba(190, 77, 227, 0);
+    // }
+    100% {
+      box-shadow: 0px 0px 20px 0px #ff2f00;
+    }
+  }
+  button:hover {
+    animation: 1.2s ease-in-out 0s normal none infinite running
+      trambling-animation;
+  }
+  @keyframes trambling-animation {
+    0%,
+    50%,
+    100% {
+      transform: rotate(0deg);
+    }
+    10%,
+    30% {
+      transform: rotate(-10deg);
+    }
+    20%,
+    40% {
+      transform: rotate(10deg);
+    }
+  }
 }
 
 // форма заполнения -- конец
@@ -108,7 +170,7 @@ main {
   z-index: -10;
 }
 .img-4 {
-  top: 200px;
+  top: 700px;
   right: -20%;
   // transition: 60s;
   animation: loader-1 20.1s infinite linear;
@@ -338,6 +400,7 @@ main {
     }
   }
 }
+
 // -------------СВАРОЧНЫЕ АППАРАТЫ
 
 .welders__img {
