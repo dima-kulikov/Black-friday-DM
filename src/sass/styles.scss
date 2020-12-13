@@ -13,6 +13,9 @@ body {
   color: white;
   /*   font-size: 22px; */
   font-weight: bold;
+  @media only screen and (max-width: 768px) {
+    max-width: 450px;
+  }
 }
 .time__text {
   font-size: 18px;
@@ -20,6 +23,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: white;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 375px) {
+    font-size: 12px;
+  }
 }
 .time__block {
   width: 150px;
@@ -30,6 +39,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 90px;
+    height: 75px; 
+  }
+  @media only screen and (max-width: 375px) {
+    width: 75px;
+    height: 60px;
+  }
 }
 // отсчет времени --- конец
 
@@ -42,12 +60,20 @@ body {
   padding: 10px;
   text-align: left;
   @media only screen and (max-width: 768px) {
-    margin: 0px auto;
+    margin: 50px auto;
     flex-direction: column;
   }
 
   .form__text {
+
     width: 70%;
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+      margin: 0px auto;
+    }
+    @media only screen and (max-width: 375px) {
+      width: auto;
+    }
   }
   .form__text__first {
     font-size: 28px;
@@ -85,6 +111,14 @@ body {
     padding-left: 20px;
     font-size: 16px;
     line-height: 20px;
+    @media only screen and (max-width: 768px) {
+      margin: 0px auto;
+      width: 320px;
+    }
+    @media only screen and (max-width: 330px) {
+      margin: 0px auto;
+      width: 300px;
+    }
   }
   ::placeholder {
     color: #ffffff;
@@ -113,6 +147,9 @@ body {
 
     @media only screen and (max-width: 768px) {
       width: 315px;
+    }
+    @media only screen and (max-width: 320px) {
+      width: 300px;
     }
   }
   @keyframes button-shadow {
@@ -151,6 +188,9 @@ main {
 .first-block {
   margin: 112px 0px 230px 0px;
   position: relative;
+  @media only screen and (max-width: 375px) {
+    margin: 112px 0px 130px 0px;
+  }
 }
 .position {
   position: absolute;
@@ -266,7 +306,12 @@ main {
         top: -390%;
         left: -20%;
         // width: 70%;
+        width: 80%;
       }
+      @media only screen and (max-width: 500px) {
+        top: -190%;
+      }
+      
       @media only screen and (max-width: 375px) {
         top: -170%;
       }
@@ -299,6 +344,9 @@ main {
       @media only screen and (max-width: 768px) {
         top: -560px;
         right: -20%;
+      }
+      @media only screen and (max-width: 500px) {
+        top: -360px;
       }
       @media only screen and (max-width: 375px) {
         top: -140%;
@@ -333,9 +381,11 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 600px;
       // outline: 2px solid red;
       @media only screen and (max-width: 768px) {
         font-size: 30px;
+        width: auto;
       }
     }
 
@@ -417,6 +467,9 @@ main {
     left: 35%;
     z-index: 1;
   }
+  @media only screen and (max-width: 500px) {
+    top: -410px;
+  }
   @media only screen and (max-width: 375px) {
     top: -250px;
   }
@@ -451,6 +504,9 @@ main {
   @media only screen and (max-width: 768px) {
     top: -840px;
     left: -38%;
+  }
+  @media only screen and (max-width: 500px) {
+    top: -510px;
   }
   @media only screen and (max-width: 375px) {
     top: -350px;
@@ -494,6 +550,9 @@ main {
   z-index: -1;
   @media only screen and (max-width: 768px) {
     top: -680px;
+  }
+  @media only screen and (max-width: 500px) {
+    top: -500px;
   }
   @media only screen and (max-width: 375px) {
     top: -440px;
@@ -540,6 +599,9 @@ main {
     top: -410px;
     left: 5%;
   }
+  @media only screen and (max-width: 500px) {
+    top: -310px;
+  }
   @media only screen and (max-width: 375px) {
     top: -430px;
     width: 200%;
@@ -584,6 +646,9 @@ main {
   @media only screen and (max-width: 768px) {
     left: -40%;
   }
+  @media only screen and (max-width: 500px) {
+    top: -500px;
+  }
   @media only screen and (max-width: 375px) {
     top: -550px;
     left: -60%;
@@ -623,10 +688,10 @@ main {
 .cordless__position {
   margin: 450px 0px 1000px;
   @media only screen and (max-width: 768px) {
-    margin: 800px 0px 600px 0px;
+    margin: 400px 0px 600px 0px;
   }
   @media only screen and (max-width: 375px) {
-    margin: 400px 0px 400px 0px;
+    margin: 300px 0px 400px 0px;
   }
 }
 .welders__position {
@@ -656,6 +721,12 @@ main {
 .shares__position {
   text-align: center;
   margin: 400px 0px;
+  @media only screen and (max-width: 768px) {
+    margin: 200px 0px;
+  }
+  @media only screen and (max-width: 375px) {
+    margin: 150px 0px;
+  }
 }
 .shares__price p {
   margin: 0px auto;
