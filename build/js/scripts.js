@@ -51,8 +51,8 @@ function getNoun(number, one, two, five) {
 } // НАЧАЛО КОДА
 
 
-var now = new Date();
-var today, tsec, tmin, thour; // IE и FF по разному отрабатывают getYear()
+var now = new Date(); // let today,tsec,tmin,thour;
+// IE и FF по разному отрабатывают getYear()
 
 var timeend = new Date(now.getYear() > 1900 ? now.getYear() + 1 : now.getYear() + 1901, 0, 1); // для задания обратного отсчета до определенной даты укажите дату в формате:
 // timeend= new Date(ГОД, МЕСЯЦ-1, ДЕНЬ);
@@ -81,6 +81,7 @@ function time() {
   document.getElementById('seconds-num').innerHTML = tsec;
   document.getElementById('seconds-text').innerHTML = getNoun(tsec, 'секунда', 'секунды', 'секунд');
   setTimeout('time()', 1000);
-}
+} // time();
 
-time(); // window.addEventListener('load', time);
+
+window.addEventListener('load', time);

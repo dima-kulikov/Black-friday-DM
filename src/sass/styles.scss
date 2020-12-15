@@ -39,6 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   @media only screen and (max-width: 768px) {
     width: 90px;
@@ -48,13 +49,16 @@ body {
     width: 75px;
     height: 60px;
   }
+  p{
+    margin: 5px;
+  }
 }
 // отсчет времени --- конец
 
 // форма заполнения
 .form {
   max-width: 1000px;
-  margin: 300px 0px 0px 16%;
+  margin: 300px auto 0px;
   // outline: 2px solid red;
   display: flex;
   padding: 10px;
@@ -94,7 +98,9 @@ body {
   flex-direction: column;
   display: flex;
   justify-content: space-around;
-
+  @media only screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
   p {
     margin: 5px;
     text-align: center;

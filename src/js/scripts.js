@@ -53,7 +53,7 @@ function getNoun(number, one, two, five) {
 
 // НАЧАЛО КОДА
 let now = new Date();
-let today,tsec,tmin,thour;
+// let today,tsec,tmin,thour;
 // IE и FF по разному отрабатывают getYear()
 let timeend= new Date(now.getYear()>1900?(now.getYear()+1):(now.getYear()+1901),0,1);
 // для задания обратного отсчета до определенной даты укажите дату в формате:
@@ -82,6 +82,6 @@ function time() {
 setTimeout('time()', 1000);
 }
 
-time();
+// time();
 
-// window.addEventListener('load', time);
+window.addEventListener('load', time);
